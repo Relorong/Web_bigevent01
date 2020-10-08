@@ -38,7 +38,7 @@ $(function () {
             url: '/api/reguser',
             data: {
                 username: $('.reg-box [name=username]').val(),
-                password: $('.reg-box [name=username]').val(),
+                password: $('.reg-box [name=password]').val(),
             },
             success: function (res) {
                 if (res.status !== 0) {
