@@ -31,7 +31,7 @@ function getUserInfo() {
             }
             //渲染用户信息
             renderAvatar(res.data)
-            console.log(res.data);
+            // console.log(res.data);
         },
         /* complete: function (res) {
             console.log(res);
@@ -50,7 +50,7 @@ function getUserInfo() {
 function renderAvatar(user) {
     //1.渲染用户名 
     var name = user.nickname || user.username;
-    $('#welcome').html("欢迎" + name)
+    $('#welcome').html("欢迎&nbsp;&nbsp;" + name)
     //2.渲染用户头像
     if (user.user_pic !== null) {
         $('.layui-nav-img').show().attr('src', user.user_pic)
